@@ -4,18 +4,28 @@
           URL SHORTNER
         </title>
     </head>
-    <body>
+    
         <link rel="stylesheet" type="text/css" href="url-shortner.css">
-        <div class="heading">
+        <script src="app.js"></script>
+
+    <script>
+        function callShort() {
+            let url = document.getElementById('long-url').value;
+            shortIt(url);
+        }
+    </script>
+    <body class="body-class"></body>
+        <div class="url-heading">
        <h1>URL SHORTNER PAGE</h1>
     </div>
 
     <div class="url-input">
         <input type="url" placeholder="Enter the url" id="short" name="long-url-shortner" >
     </div>
-    <BR><br><BR><br><br><BR><br><BR><br>
+
     <div class="shortening-button">
-       <center><button  type="submit">SHORT IT</button></center>
+        <div class="short-button">
+            <input class="clickable-button" type="button" value="SHORT IT" onclick="callShort()">
     </div>
     </body>
 </html>
